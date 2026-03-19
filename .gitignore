@@ -1,0 +1,20 @@
+# 1. 컴파일된 빌드 결과물 (용량 폭탄 방지)
+[Bb]in/
+[Oo]bj/
+
+# 2. Visual Studio 개인 임시 파일 및 설정
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# 3. 로그 파일
+*.log
+
+# 4. Mac 운영체제 환경 파일 (나중에 다른 개발자와 협업할 때를 대비)
+.DS_Store
+
+# 5. 환경 변수 및 민감한 설정 (만약을 대비한 보안)
+*.env
+appsettings.Development.json

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹소켓 실시간 오목</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+</head>
+<body>
+    <h1>🎮 실시간 1:1 오목</h1>
+
+    <div id="lobby-screen">
+        <div class="input-group">
+            <input type="text" id="nicknameInput" placeholder="닉네임 입력">
+        </div>
+        <button id="joinButton">빠른 대전 (자동 매칭)</button>
+    </div>
+
+    <div id="game-screen">
+        <h2 id="statusText">상대방을 기다리는 중...</h2>
+        <canvas id="omokBoard" width="600" height="600"></canvas>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
