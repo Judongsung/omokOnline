@@ -15,6 +15,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/out .
 
-# 5. 8080 포트 열고, 서버 실행 (OmokServer.dll 이름이 맞는지 확인해 주세요!)
+# 5. 8080 포트 열고, 서버 실행
 EXPOSE 8080
-ENTRYPOINT ["dotnet", "OmokServer.dll"]
+ENTRYPOINT ["dotnet", "Server.dll"]
